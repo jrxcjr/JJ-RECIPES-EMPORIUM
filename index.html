@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang= "en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navigation">
+                    <img src="resources/img/1color-darkbg@2x.png" alt="jj logo" class="logo" />
+                    <ul class="main-nav">
+                     <li><a href="reset"> RESET</a></li>
+                     <li><a href="difficulty-section"> Difficulty Selection</a></li>
+                     <li><a href="recipe-type-selection"> Recipe Type</a></li>
+                     <li><a href="talk to us"> Talk to us</a></li>
+                    </ul>
+                   </div> 
+            </nav>
+
+            <div class="hero-text-box">
+            <h1 class='hero-text'>
+            Welcome to JJ's Recipe Emporium
+            </h1>
+            <a class="btn btn-full" href=""> Teach me </a>
+            <a class="btn btn-ghost" href=""> Get me to the recipes </a>
+            </div>
+        </header>
+
+                <section class="difficulty-section">
+                    <div class="difficulties-container-big">
+                     <h2>Choose Your Skill Level</h2>
+                     <p class="difficulty-container-big-text">
+                      Choose your skill level according to your comfort with using different methods,grinds and recipes.
+                     </p>
+                    </div>
+                 
+                    <div>
+                     <div class="difficulties-container">
+                     <ion-icon class="icon-on-features" name="infinite-outline"></ion-icon>
+                          <h3>Easy Mode</h3>
+                      <p>
+                       You don't know much about coffee but is willing to take the first plunge in this amazing world. You will be directed to the easiest methods.
+                      </p>
+                      <input type="checkbox" id="difficultyfilter1easy" name="diff1" value="easy">
+                      <label for="difficultyfilter1"> Select Easy Mode</label><br>
+                     </div>
+                    </div>
+                 
+                    <div>
+                     <div class="difficulties-container">
+                      <ion-icon class="icon-on-features" name="stopwatch-outline"></ion-icon>
+                      <h3>Medium Mode</h3>
+                      <p>
+                       You are already more than a neophyte, and already has more than one method, you will be directed to percolation and infusion methods to help improve your skills.
+                      </p>
+                      <input type="checkbox" id="difficultyfilter2medium" name="diff2" value="medium">
+                      <label for="difficultyfilter2"> Select Medium Mode</label><br>
+                     </div>
+                    </div>
+                 
+                    <div>
+                     <div class="difficulties-container">
+                      <ion-icon class="icon-on-features" name="pizza-outline"></ion-icon> 
+                      <h3>Hard Mode</h3>
+                      <p>
+                       After trailing the unknown coffee realms, you have arrived at it's fringe, beyond here it's all about experimenting with different grind profiles, machines and methods.
+                      </p>
+                      <input type="checkbox" id="difficultyfilter3hard" name="diff3" value="hard">
+                       <label for="difficultyfilter3"> Select Hard Mode</label>
+                     </div>
+                    </div>
+                 
+                    <div>
+                     <div class="difficulties-container">
+                      <ion-icon class="icon-on-features" name="fast-food-outline"></ion-icon>
+                      <h3>Expert Mode</h3>
+                      <p>
+                       We won't limit your creativity, which means you can see whatever you
+                       feel like. The world is your oyster, go wild!
+                      </p>
+                      <input type="checkbox" id="difficultyfilter3hard" name="diff3" value="hard">
+                      <label for="difficultyfilter3"> Expert Difficulty (UNDER TESTING)</label>
+                     </div>
+                    </div>
+                 </section>
+                 </section>
+
+            </section>
+
+            <section class="recipe-type-selection">
+                <div>
+                    <div class="type-container-1">
+                    <ion-icon class="icon-on-features" name="infinite-outline"></ion-icon>
+                         <h3>Percolation Recipes</h3>
+                     <p>
+                      Percolation Methods are those that the water only comes in contact with the water that is used for brewing during the time that it's flowing through the method. Usually results in a milder but more delicate brew.
+                     </p>
+                     <input type="checkbox" id="typefilter1percolation" name="type1" value="percolation">
+                     <label for="typefilter1"> Select Percolation Recipes</label><br>
+                    </div>
+                   </div>
+                
+                   <div>
+                    <div class="type-container-2">
+                     <ion-icon class="icon-on-features" name="stopwatch-outline"></ion-icon>
+                     <h3>Infusion Methods</h3>
+                     <p>
+                      Infusion Methods are those that the water is in constant contact with the hot water, thus extracting less nuanced flavors but stronger bodied ones.
+                     </p>
+                     <input type="checkbox" id="typefilter2infusion" name="type2" value="infusion">
+                     <label for="difficultyfilter2">Select Infusion Recipes</label><br>
+                    </div>
+                   </div>
+                   <div><button id="#btnFilter" class="#btnFilter">FILTER!</button></div>
+                   <div><button id="#resetButton">RESET</button></div>
+            </section>
+
+          <section class='recipe' id='recipeSection'>
+              
+            
+            
+            
+            
+            
+            
+            
+          </section>
+
+          
+
+          <!-- <div class="grid-container"></div> --> 
+<!-- <figure class='recipe__card'>  BASE RECIPE HTML CODE
+                <div class='recipe__hero'>
+                  <img src="resources/img/french press.jpg" alt='french press' class='recipe__img'/>
+                </div>
+                <div class="recipe__content" id='recipe_content'>
+                  <div class="recipe__title" id='recipe_title'>
+                    <h1 class='recipe__heading' id='recipe_heading'> French Press </h1>
+                    <div class="recipe__tag recipe__tag--1" id='recipe_tag_1'>#infusion</div>
+                    <div class="recipe__tag recipe__tag--2" id='recipe_tag_2'>#easy</div>
+                  </div>
+                    <ul class="recipe__steps">
+                        <li id='recipe_step_1'>Scald the vessel</li>
+                        <li id='recipe_step_2'>pre infuse 200g of water for 30s.</li>
+                        <li id='recipe_step_3'>mix the hydrated coffee for 15s.</li>
+                        <li id='recipe_step_4'>put 200g of water and wait for 3"30'</li>
+                        <li id='recipe_step_5'>push the plunger, stop the extraction</li>
+                    </ul>         
+                  <div class='recipe__details'>
+                    <ion-icon class="recipes__detail--icons" name="stopwatch-outline">                    
+                    </ion-icon>
+                    <p class='recipe__detail' id='recipe_detail_1'>4 minutes</p>
+                    <ion-icon class="recipes__detail--icons" name="scale-outline"></ion-icon>                       
+                    <p class='recipe__detail'id='recipe_detail_2'>1:14 ratio</p>
+                    <ion-icon class="recipes__detail--icons" name="thermometer-outline">                       
+                    </ion-icon>
+                    <p class='recipe__detail' id='recipe_detail_3'>95ºC</p>
+                    </div>
+                </div>
+                <div class='recipe__price' id='recipe_type'>INFUSION</div>
+               </figure> -->
+
+<script src="/resources/js/script.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>   
+</html> 

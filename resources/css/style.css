@@ -1,0 +1,419 @@
+ 
+
+/* reusable code
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+   }
+
+
+
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)),
+     url(img/img/coffee-bar.jpg);
+    background-size:100%;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+
+.hero-text-box {
+    display:flex;
+    flex: 1 0 45%;
+    width: 1140px;
+    
+    align-items: center;
+    justify-content: center;
+    
+   }
+
+   /* position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+/*
+.logo {
+        height: 100px;
+        width: auto;
+        float: left;
+        margin-top: 20px;
+       }
+
+
+/* MAIN NAVI 
+.main-nav {
+    float: right;
+    list-style: none;
+    margin: auto 55px;
+    
+   }
+
+.main-nav li {
+ display: inline-block;
+ margin-left: 40px;
+ margin-top: 50px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+ padding: 8px 0;
+ color: #fff;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 90%;
+ border-bottom: 2px solid transparent;
+ transition: border-bottom 0, 2s;
+}
+
+/* if you pass 2 equal references, the element will default to the default color of visited links that is purple */
+
+/*.main-nav li a:hover,
+.main-nav li a:active {
+ border-bottom: 2px solid #e67e22;
+} */
+
+/* body {
+    font-family: source-sans-pro;
+    background: #131313;
+    color: white;
+    text-align: center;
+    display:flex
+} */
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 25% 1fr 7%;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "recipe-box";
+  }
+   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: rgb(151, 88, 28);
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+  
+  body {
+    color: #444;
+    padding: 0px;
+    height: 100vh;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+
+/* REUSABLE CODE */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+/* header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)),
+  url(/resources/css/img/img/coffee-bar.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ background-attachment: fixed;
+ 
+}
+
+.navigation {
+    display: flex;
+    flex-wrap:wrap ;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    list-style: none;   
+}
+
+.navigation ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navigation img {
+    align-items: flex-start;
+    height: 10%;
+    width: 10%;
+}
+
+.hero-text-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+    color: white;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 0px;
+    margin-left: 15;
+
+}
+
+.hero-text {
+ margin-bottom: 10px;
+}
+
+.logo {
+    height: 10%;
+    width:auto;
+}
+
+
+/* -------------------------------------------------- */
+/* BUTTONS */
+/* __________________________________________________ */
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+ display: inline-block;
+ padding: 10px 30px;
+ font-weight: 300;
+ text-decoration: none;
+ border-radius: 200px;
+ transition: background-color 0.2s, border 0, 2s, color 0, 2s;
+}
+
+/*this link element tells the html page that when the page is not visited it will look like this, when it's visited, the visited
+function will tell the html page that the btn will look different after it's used. */
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+ background-color: #e67e22;
+ border: 1px solid #e67e22;
+ color: #fff;
+ margin-right: 15px;
+}
+
+/*those link and visited functions will make the button do certain things when those attributes are achieved, just the same as hover and active
+*/
+
+.btn-ghost:link,
+.btn-ghost:visited {
+ border: 1px solid #e67e22;
+ color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+ background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type="submit"] {
+ border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+ border: 1px solid #cf6d17;
+ color: #fff;
+}
+
+/* ------------------------------------------------ */
+/* LINKS */
+/* ------------------------------------------------ */
+
+a:link,
+a:visited {
+ color: #e67e22;
+ text-decoration: none;
+ padding-bottom: 1px;
+ border-bottom: 1px solid #e67e22;
+ transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+ color: #555;
+ border-bottom: 1px solid transparent;
+}
+
+/* difficulty section */
+
+.difficulty-section {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 1fr ;
+    justify-items: center;
+    background-color: rgb(182, 182, 182);
+}
+
+.difficulties-container-big {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 130%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.difficulties-container {
+    margin-left: 5px;
+    padding: 10px 10px;
+    grid-row-start: 3;
+    grid-row-end:1;
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-column-gap: 10px;
+}
+
+/* RECIPE TYPE */
+
+
+.recipe-type-selection {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.type-container-1 {
+    margin: 20px 20px;
+    align-content: center;
+    grid-column-gap: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.type-container-2 {
+    margin: 20px 20px;
+    padding: 5px 10px;
+    align-content: center;
+    grid-column-gap: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+/*recipe card css */
+  .recipe__card {
+    max-width:70%;
+    border-radius:4px;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
+    overflow: hidden;
+    display: flex;
+    margin: 5% 15%;    
+  }
+  
+  .recipe__content {
+    flex: 1;
+    background: white;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .recipe__price {
+    
+    background: linear-gradient(to bottom, #67b26f,#4ca2cd);
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 20px;    
+    display:flex;
+    align-items: right;
+  }
+  
+  .recipe__hero {
+    flex: 0 0 45%;
+
+  }
+  
+  .recipe__img {
+    height:100%;
+    width: 100%;
+    display: block;
+  }
+  
+  .recipe__title {
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .recipe__heading {
+    font-size: 25px;
+    margin-right:auto;
+  }
+  
+  .recipe__tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    padding:2px 7px;
+    border-radius: 100px;
+    margin-left: 7px;
+  }
+  
+  .recipe__tag--1 {background-color: #67b26f;}
+  .recipe__tag--2 {background-color: #4ca2cd;}
+  
+  .recipe__details {
+    display: flex;
+    justify-content: flex-start;
+    margin-top:auto;
+  }
+  
+  .recipe__detail {
+   font-size: 15px;
+   text-transform: uppercase;
+   margin-right: 20px;
+   font-weight: 700;
+   display: flex;
+   align-items:center; 
+  }
+
+  .recipe__steps {
+      margin-bottom: 5%;
+      list-style:upper-roman;
+  }
+
+  /* end of card css */
