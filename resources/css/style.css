@@ -202,9 +202,10 @@ header {
 /* BUTTONS */
 /* __________________________________________________ */
 
-.btn:link,
-.btn:visited,
-input[type="submit"] {
+.btnFilter:link,
+.btnFilter:visited,
+.btnReset:link,
+.btnReset:visited {
  display: inline-block;
  padding: 10px 30px;
  font-weight: 300;
@@ -216,9 +217,10 @@ input[type="submit"] {
 /*this link element tells the html page that when the page is not visited it will look like this, when it's visited, the visited
 function will tell the html page that the btn will look different after it's used. */
 
-.btn-full:link,
-.btn-full:visited,
-input[type="submit"] {
+.btnFilter:link,
+.btnFilter:visited,
+.btnReset:link ,
+.btnReset:visited {
  background-color: #e67e22;
  border: 1px solid #e67e22;
  color: #fff;
@@ -228,27 +230,32 @@ input[type="submit"] {
 /*those link and visited functions will make the button do certain things when those attributes are achieved, just the same as hover and active
 */
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btnFilter:link,
+.btnFilter:visited,
+.btnReset:link,
+.btnReset:visited {
  border: 1px solid #e67e22;
  color: #e67e22;
 }
 
-.btn:hover,
-.btn:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
+.btnFilter:hover,
+.btnFilter:active,
+.btnReset:hover,
+.btnReset:active {
  background-color: #cf6d17;
 }
 
-.btn-full:hover,
-.btn-full:active,
-input[type="submit"] {
+.btnFilter:hover,
+.btnFilter:active,
+.btnReset:hover,
+.btnReset:active {
  border: 1px solid #cf6d17;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.btnFilter,
+.btnFilter:active,
+.btnReset,
+.btnReset:active {
  border: 1px solid #cf6d17;
  color: #fff;
 }
@@ -312,6 +319,7 @@ a:active {
     display: grid;
     grid-template-rows: 1fr ;
     grid-template-columns: 0.5fr 0.5fr;
+    padding-bottom: 5%;
 }
 
 .type-container-1 {
@@ -331,6 +339,31 @@ a:active {
     justify-self: center;
 }
 
+/* button filter/reset */
+
+.btnScripted {
+  display:flex;
+  justify-content: center;
+}
+
+.btnFilter {
+  background-size: 40px;
+  border-radius: 10%;
+  margin: 5px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #e67e22;
+}
+
+.btnReset {
+  background-size: 40px;
+  margin: 5px 20px;
+  border-radius: 10%;
+  font-size: 16px;
+  color: white;
+  background-color: #e67e22;
+
+}
 
 
 /*recipe card css */
@@ -417,3 +450,54 @@ a:active {
   }
 
   /* end of card css */
+
+  /* footer css code */
+
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: #444;
+    display: grid;
+    grid-template-columns: 30% 50% 15%;
+    grid-template-rows: 3fr 0.2fr;
+  }
+
+  .footer-nav li {
+    display: iblock;
+  }
+
+  .footer-column-1 {
+    order: 2;
+    display: inline;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .social-container { 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+  }
+  
+  .social-links {
+    justify-content: center;
+    align-self:  auto;
+    align-content: right;
+  }
+
+  .social-links li {
+    display:inline;
+    align-content: center;
+  }
+
+  .copyright {
+    color: #fff;
+    justify-content: center;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+  }
