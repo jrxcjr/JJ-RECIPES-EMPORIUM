@@ -183,7 +183,7 @@ header {
     color: white;
     flex-wrap: wrap;
     width: 40%;
-    padding: 0px;
+    padding: 10px;
     margin-left: 15;
 
 }
@@ -278,6 +278,37 @@ a:active {
  color: #555;
  border-bottom: 1px solid transparent;
 }
+
+/* GLOSSARY LINKS */ 
+
+.glossary-header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-size: 1.5em;
+}
+
+.glossary-section {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 1fr ;
+  justify-items: center;
+  background-color: white;
+}
+
+.glossary-container {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+}
+
+.glossary-list {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
 
 /* difficulty section */
 
